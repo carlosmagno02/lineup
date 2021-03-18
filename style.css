@@ -200,10 +200,12 @@ footer{
 
 @media screen and (max-width:700px){
     /* Header */
+    header{
+        width: 100% !important;
+    }
 
     .navbar{
         margin:0 auto;
-        width: 360px !important;
         justify-content: space-around;
         padding: 0;
     }
@@ -253,9 +255,14 @@ footer{
     }
 
     /* Sobre */
+
+    .sobre-empresa > div{
+        margin: 10px auto;
+    }
+
     .sobre-empresa{
-        left: 15%;
         flex-direction: column;
+        justify-content: center;
     }
 
     .img-empresa img{
