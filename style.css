@@ -199,10 +199,11 @@ footer{
 }
 
 @media screen and (max-width:700px){
-
-
     /* Header */
+
     .navbar{
+        margin:0 auto;
+        width: 360px !important;
         justify-content: space-around;
         padding: 0;
     }
@@ -300,6 +301,10 @@ footer{
     }
 
     /* Depoimentos */
+    .depoimentos{
+        width: 100%;
+    }
+
     .todos-depoimentos{
         flex-direction: column;
     }
