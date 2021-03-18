@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Header */
+
+header{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fc9bd6;
+    border-bottom: 1px solid rgb(248, 158, 200);
+}
+
+.navbar img{
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.navbar{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+.menu li{
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* sobre */
+.sobre{
+    height: 100vh;
+    position: relative;
+}
+
+.sobre-empresa{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top: 55%;
+    transform: translateY(-45%);
+}
+
+.img-empresa img{
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.txt-empresa{
+    margin: auto 0;
+    width: 35%;
+    font-size: 32px;
+}
+
+/* servicos */
+.servicos{
+    height: auto;
+    background-color: #FFC7EA;
+}
+
+.nossos-servicos{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.servicos-img{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-service{
+    width: 350px;
+    height: 350px;
+    border-radius:10px ;
+    border: 1px solid;
+}
+
+/* Clientes */
+.clientes{
+    padding: 50px;
+}
+.clientes h2{
+
+    text-align: center;
+}
+.img-clientes{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-cliente {
+    border-radius: 10px;
+    border: 1px solid;
+    width: 350px;
+    height: 350px;
+}
+
+/* Depoimentos */
+.depoimentos{
+    padding: 30px 0;
+    background-color: #FFC7EA;
+}
+
+.todos-depoimentos{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.depoimento{
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 350px;
+    height: 150px;
+}
+/* Contato */
+.contato{
+height: 500px;
+}
+
+.contatos{
+    margin: auto;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 700px;
+    font-size: 25px;
+}
+
+.contatos p{
+    padding: 15px;
+}
+
+.meio-contato{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px
+}
+
+.meio-contato a{
+    color: black;
+    text-decoration: none;
+}
+
+/* footer */
+footer{
+    display: flex;
+    height: 30px;
+    background-color: #FFC7EA;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:700px){
+
+
+    /* Header */
+    .navbar{
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menubtn{
+        border-radius: 10px 10px 0 0;
+        background-color: #fc9bd6;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .menu-mobile{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .menu-content{
+        display: none;
+        position: absolute;
+        background-color: #FFC7EA;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 0 10px 10px 10px;
+        z-index: 1;
+    }
+    
+    .menu-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu-mobile:hover .menu-content{
+        display: block;
+    }
+    
+    .menu-mobile:hover .menubtn{
+        background-color: #ff6dc5;
+    }
+
+    /* Sobre */
+    .sobre-empresa{
+        left: 15%;
+        flex-direction: column;
+    }
+
+    .img-empresa img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .txt-empresa{
+        font-size: 17px;
+        width: 70%;
+    }
+
+    /* .sobre{
+        left: 25%;
+        right: 25%;
+    } */
+
+    /* Servicos */
+    .img-service{
+        margin: 10px auto;
+        width: 250px;
+        height: 250px;
+    }
+
+    .servicos-img{
+        flex-direction: column;
+    }
+
+    /* Clientes */
+    .clientes{
+        padding: 0;
+    }
+
+    .img-clientes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-cliente{
+        margin: 10px auto;
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Depoimentos */
+    .todos-depoimentos{
+        flex-direction: column;
+    }
+
+    .depoimento{
+        margin: 10px auto;
+        width: 250px;
+    }
+
+    /* Contato */
+    .contatos{
+        font-size: 15px;
+    }
+    
+    .contatos p{
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .meio-contato{
+        text-align: center;
+        font-size: 10px;
+        flex-direction: column;
+    }
+
+    /* rodape */
+    footer{
+        font-size: 10px;
+    }
+}
